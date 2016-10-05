@@ -1,0 +1,12 @@
+.panel {
+  border: 1px solid black;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+
+    .panel-header, .panel-content {
+      padding: 1em;
+    }
+      h3 {
+        margin: 0;
+      }

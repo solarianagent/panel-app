@@ -5,9 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { PanelComponent, PanelButtonComponent, PanelContentDirective, PanelHeaderDirective } from './panel';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PanelComponent,
+    PanelButtonComponent,
+    PanelHeaderDirective,
+    PanelContentDirective
   ],
   imports: [
     BrowserModule,
