@@ -3,6 +3,18 @@ h3 {
 }
 
 .panel-header {
+  color: white;
   padding: 1em;
 }
+    .panel-header.warning {
+      background-color: red;
+    }
+
+    .panel-header.success {
+      background-color: green;
+    }
+
+    .panel-header.primary {
+      background-color: blue;
+    }
 

@@ -3,4 +3,15 @@
   overflow: hidden;
   padding-bottom: 1em;
 }
+  .panel.warning {
+    border-color: red;
+  }
+
+  .panel.success {
+    border-color: green;
+  }
+
+  .panel.primary {
+    border-color: blue;
+  }
 

@@ -6,23 +6,17 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./panel.component.css']
 })
 export class PanelComponent implements OnInit {
+  @Input() type: string;
   @Input() headerText: string;
   @Input() contentText: string;
-  @Input() textColor: string;
-  @Input() backgroundColor: string;
 
   panelOpened: boolean;
-  headerStyles: Object;
 
   constructor() { }
 
   ngOnInit() {
     this.panelOpened = true;
-
-    this.headerStyles = {
-      color: this.textColor,
-      background: this.backgroundColor
-    }
+    this.type = this.type || 'primary';
   }
 
   toggleOpened() {

@@ -1,5 +1,5 @@
-<div *ngIf="panelOpened" class="panel" [style.border-color]="backgroundColor">
-  <panel-header [headerText]="headerText" [headerStyles]="headerStyles"></panel-header>
+<div *ngIf="panelOpened" class="panel" [ngClass]="type">
+  <panel-header [headerText]="headerText" [type]="type"></panel-header>
   <panel-content [contentText]="contentText"></panel-content>
   <panel-button (click)="toggleOpened()"></panel-button>
 </div>

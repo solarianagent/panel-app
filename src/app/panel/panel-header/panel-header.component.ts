@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./panel-header.component.css']
 })
 export class PanelHeaderComponent {
-  @Input() headerText:string;
-  @Input() headerStyles:string;
+  @Input() headerText: string;
+  @Input() type: string;
 
   constructor() { }
 }
