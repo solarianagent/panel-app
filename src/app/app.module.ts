@@ -5,20 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { PanelComponent, PanelButtonComponent, PanelContentDirective, PanelHeaderDirective } from './panel';
+import { PanelModule } from './panel/panel.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PanelComponent,
-    PanelButtonComponent,
-    PanelHeaderDirective,
-    PanelContentDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

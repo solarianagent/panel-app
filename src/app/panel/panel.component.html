@@ -1,10 +1,6 @@
 <div *ngIf="panelOpened" class="panel" [style.border-color]="backgroundColor">
-  <h3 class="panel-header" [ngStyle]="headerStyles">
-    <ng-content select="app-panel-header"></ng-content>
-  </h3>
-  <p class="panel-content">
-    <ng-content select="app-panel-content"></ng-content>
-  </p>
-  <app-panel-button (click)="toggleOpened()"></app-panel-button>
+  <panel-header [headerText]="headerText" [headerStyles]="headerStyles"></panel-header>
+  <panel-content [contentText]="contentText"></panel-content>
+  <panel-button (click)="toggleOpened()"></panel-button>
 </div>
 <button *ngIf="!panelOpened" (click)="toggleOpened()">Open</button>

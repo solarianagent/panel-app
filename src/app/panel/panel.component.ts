@@ -1,13 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Subject } from 'rxjs/Subject';
-
 @Component({
-  selector: 'app-panel',
+  selector: 'panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.css']
 })
 export class PanelComponent implements OnInit {
+  @Input() headerText: string;
+  @Input() contentText: string;
   @Input() textColor: string;
   @Input() backgroundColor: string;
 
